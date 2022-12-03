@@ -1,0 +1,11 @@
+{
+    "project": [
+        {
+            "name": "Hotel Booking Management System",
+            "year": "2022",
+            "description": "This website functions to make it easier for customers who want to make hotel bookings without having to go to the place",
+            "technology": "HTML5, CSS3, Bootstrap, JavaScript, JQuery, PHP, MySQL, VS Code",
+            "link": "https://github.com/Faris-Rafi/Hotel-Booking-System-Website"
+        }
+    ]
+}

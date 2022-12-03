@@ -4,78 +4,207 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Rees - Portfolio</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <title>Portfolio Website</title>
+
     <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
-      integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik+Microbe&family=VT323&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
   <body>
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg bg-danger shadow-lg navbar-dark">
+    <section id="navbar">
+      <nav class="shadow navbar navbar-expand-lg bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand text-uppercase fs-3" href="#">Portfolio</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav ms-auto gap-4">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+              <a class="nav-link" href="#skills">Skills</a>
+              <a class="nav-link" href="#project">Project</a>
+              <a class="nav-link" href="#contact">Contact</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </section>
+
+    <section id="profile">
       <div class="container">
-        <a class="navbar-brand fw-bold ps-5" href="#">Muhammad Faris Rafi</a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNav"
-          aria-controls="navbarNav"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item ps-5">
-              <a class="nav-link active" aria-current="page" href="#"><i class="bi bi-house-fill"></i> Home</a>
-            </li>
-            <li class="nav-item ps-5">
-              <a class="nav-link" href="#"><i class="bi bi-person"></i> About</a>
-            </li>
-            <li class="nav-item ps-5">
-              <a class="nav-link" href="#"><i class="bi bi-clipboard-check"></i> Projects</a>
-            </li>
-            <li class="nav-item ps-5">
-              <a class="nav-link" href="#"><i class="bi bi-telephone"></i> Contact</a>
-            </li>
+        <div class="row flex-row-reverse pb-5">
+          <div class="col-md-6 mt-5 mb-5 d-flex justify-content-center">
+            <img
+              src="assets/img/profile.jpg"
+              alt="My Photo"
+              class="rounded-circle"
+              width="250"
+            />
+          </div>
+
+          <div class="about-me col-md-6 mt-5 mb-5 d-flex flex-column justify-content-center">
+            <h1>Hi!, I'm Muhammad Faris Rafi</h1>
+            <p>
+              I'm a Junior Web Developer. I'm familiar working with Codeigniter
+              and Laravel. I'm also knows how to use react
+            </p>
+            <a href="#contact" class="btn btn-dark rounded-pill mt-3 w-50 mb-4">
+              <span>Contact</span>  <i class="fas fa-arrow-circle-down"></i>
+            </a>
+
+            <div class="contact-button d-flex flex-row gap-3">
+              <a
+                href="https://www.linkedin.com/in/muhammad-faris-rafi-230a2022b/?_l=en_US"
+                class="btn btn-dark text-white rounded-circle"
+                target="_blank"
+                ><i class="fa-brands fa-linkedin-in"></i
+              ></a>
+              <a
+                href="https://github.com/Faris-Rafi"
+                class="btn btn-dark text-white rounded-circle"
+                target="_blank"
+                ><i class="fa-brands fa-github"></i
+              ></a>
+              <a
+                href="http://wa.me/6289653253158"
+                class="btn btn-dark text-white rounded-circle"
+                target="_blank"
+                ><i class="fa-brands fa-whatsapp"></i
+              ></a>
+              <a
+                href="https://www.instagram.com/rees.v1/"
+                class="btn btn-dark text-white rounded-circle"
+                target="_blank"
+                ><i class="fa-brands fa-instagram"></i
+              ></a>
+              <a
+                href="https://t.me/6289653253158"
+                class="btn btn-dark text-white rounded-circle"
+                target="_blank"
+                ><i class="fa-brands fa-telegram"></i
+              ></a>
+            </div>
+          </div>
         </div>
       </div>
-    </nav>
-    <!-- End Navbar -->
+    </section>
 
-    <!-- Jumbotron -->
-    <section class="jumbotron text-center bg-danger">
+    <section id="divider">
+      <div class="custom-shape-divider-bottom-1669776662 mb-5">
+        <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none"><path d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z" opacity=".25" class="shape-fill"></path><path d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z" opacity=".5" class="shape-fill"></path><path d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z" class="shape-fill"></path></svg>
+      </div>
+    </section>
+
+    <section id="skills">
       <div class="container">
         <div class="row">
-          <div class="col mt-5">
-            <img
-            src="img/hampter.jpeg"
-            alt="My Photo"
-            width="460"
-            class="img-thumbnail"
-          />
+          <div class="col-md-12">
+            <h2 class="text-center mb-3">Skills</h2>
+            <hr>
           </div>
-          <div class="col mt-5">
-            <h1 class="display-4">Muhammad Faris Rafi</h1>
-            <p class="lead">Fresh Graduate | Web Developer</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem blanditiis aliquam similique, distinctio dolores asperiores eum quisquam fugit saepe, iure natus iusto placeat cum beatae optio maiores. Error, ab sint natus hic labore enim! Cupiditate sapiente maiores mollitia ducimus corrupti, dolorum nulla qui ipsum architecto error nihil. Repellendus, non voluptatum.</p>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptates nobis amet facere cupiditate ratione magnam eveniet tempore aut nihil dolorem cum iusto sapiente error, aliquam nemo aliquid eos in commodi? Eum, soluta harum totam impedit eos a error necessitatibus autem, quibusdam, laudantium velit fugiat? Ad odio eveniet quidem est officia cum alias inventore, sequi facere nulla et animi rem harum qui modi itaque ullam doloribus eos natus illo nam! Temporibus?</p>
+        </div>
+        <div class="row bg-dark p-4 rounded gap-5 mb-5" id="my-skills"></div>
+      </div>
+    </section>
+
+    <section id="project">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <h2 class="text-center mb-3">Project</h2>
+            <hr>
+          </div>
+          <div class="col-sm-3 d-flex justify-content-center align-items-center mb-5" id="my-project">
           </div>
         </div>
       </div>
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#f3f4f5" fill-opacity="1" d="M0,64L60,90.7C120,117,240,171,360,208C480,245,600,267,720,250.7C840,235,960,181,1080,144C1200,107,1320,85,1380,74.7L1440,64L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"></path></svg>
     </section>
-    <!-- End Jumbotron -->
+
+    <section id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <h2 class="text-center mb-3">Contact</h2>
+            <hr>
+          </div>
+          <div class="col text-center">
+            <a href="http://wa.me/6289653253158" class="btn btn-success p-3 mb-3" target="_blank"><i class="fa-brands fa-whatsapp fs-2"></i> Chat Via  Whatsapp</a>
+            <h5 class="mb-3">Or send message to :</h5>
+            <p class="fs-2">farisrafi048@gmail.com</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="footer">
+      <footer class="shadow bg-dark mt-5 p-3">
+        <div class="container-fluid">
+          <h6 class="text-white text-center">© Copyright 2022 Designed By Me</h6>
+        </div>
+      </footer>
+    </section>
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="projectModal">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header" id="modal-header">
+            
+          </div>
+          <div class="modal-body" id="descriptionProject">
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Scroll Button -->
+    <button class="btn text-white rounded-circle" id="scroll-button" onclick="scrollToUp()"><i class="fa-solid fa-arrow-up-long"></i></button>
 
     <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
       crossorigin="anonymous"
     ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/js/all.min.js"
+      integrity="sha512-rpLlll167T5LJHwp0waJCh3ZRf7pO6IT1+LZOhAyP6phAirwchClbTZV3iqL3BMrVxIYRbzGTpli4rfxsCK6Vw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://code.jquery.com/jquery-3.6.1.js"
+      integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI="
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="assets/js/script.js"></script>
   </body>
 </html>
